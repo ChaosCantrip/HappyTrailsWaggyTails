@@ -24,7 +24,7 @@
     list-style: none;
 }
 
-.nav ul li a {
+.nav ul a {
     padding-block: 1rem;
     padding-inline: 1.5rem;
     line-height: 1.2rem;
@@ -33,6 +33,6 @@
     color: black;
 }
 
-.nav ul li a:hover {
+.nav ul a:hover {
     background: #f0f0f0;
 }
