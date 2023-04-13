@@ -1,5 +1,34 @@
-.header{
-    padding: 10px;
+.header {
+    padding: 1rem 1rem 2rem;
     text-align: center;
-    margin-bottom: 1rem;
+    display: flex;
+    max-width: 85rem;
+    margin: 0 auto;
+}
+
+.nav {
+    margin-left: auto;
+    margin-block: auto;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav ul li a {
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    line-height: 1.2rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    color: black;
+}
+
+.nav ul li a:hover {
+    background: #f0f0f0;
 }
