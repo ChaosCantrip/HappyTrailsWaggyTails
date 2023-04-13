@@ -12,7 +12,7 @@ export default function HomePage() {
     <div>
         <h2>Hi, I'm Nadine!</h2>
         <section>
-            <p>After working for most of my adult life, specifically the last 9 years, in a school for children with Special Education Needs, I am not following a long held ambition to work with dogs, and have set up Happy Trails Waggy Tails dog walking service</p>
+            <p>After working for most of my adult life, specifically the last 9 years, in a school for children with Special Education Needs, I am now following a long held ambition to work with dogs, and have set up Happy Trails Waggy Tails dog walking service</p>
             <p>I would love to hear from you and meet your doggy member of the family</p>
         </section>
         <section>
@@ -27,7 +27,7 @@ export default function HomePage() {
         <section id="contact">
             <h2>Contact Me!</h2>
             <p><FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:07425 160615">07425 160615</a></p>
-            <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytrails.co.uk</a></p>
+            <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytails.co.uk</a></p>
         </section>
     </div>
   );
