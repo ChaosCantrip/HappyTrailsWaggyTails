@@ -1,3 +1,12 @@
+:root {
+    --main-font: "MV Boli", cursive;
+    --header-font: "MV Boli", cursive;
+}
+
 * {
-    font-family: "MV Boli", cursive;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
 }
