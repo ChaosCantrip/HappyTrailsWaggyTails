@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaw } from "@fortawesome/free-solid-svg-icons";
+import { faPaw, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
     title: "Home"
@@ -26,8 +26,8 @@ export default function HomePage() {
         </section>
         <section id="contact">
             <h2>Contact Me!</h2>
-            <p>Phone: <a href="tel:07425 160615">07425 160615</a></p>
-            <p>Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytrails.co.uk</a></p>
+            <p><FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:07425 160615">07425 160615</a></p>
+            <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytrails.co.uk</a></p>
         </section>
     </div>
   );
