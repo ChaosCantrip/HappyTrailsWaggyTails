@@ -1,3 +1,7 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import "@/styles/global/master.css";
 import Header from "@/app/header";
 import Footer from "@/app/footer";
