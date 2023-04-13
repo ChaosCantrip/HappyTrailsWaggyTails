@@ -1,4 +1,6 @@
 import "@/styles/global/master.css";
+import Header from "@/app/header";
+import Footer from "@/app/footer";
 
 export const metadata = {
     title: {
@@ -10,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
-      <body>{children}</body>
+        <body>
+            <Header />
+            <main>
+                {children}
+            </main>
+            <Footer />
+        </body>
     </html>
   )
 }
