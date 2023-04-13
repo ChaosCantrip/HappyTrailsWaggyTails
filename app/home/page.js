@@ -15,6 +15,11 @@ export default function HomePage() {
             <li>Canine First Aid Certified</li>
             <li>Fully insured and DBS Checked</li>
         </ul>
+        <div id="contact">
+            <h2>Contact Me!</h2>
+            <p>Phone: <a href="tel:07425 160615">07425 160615</a></p>
+            <p>Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytrails.co.uk</a></p>
+        </div>
     </div>
   );
 }
