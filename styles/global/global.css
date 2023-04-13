@@ -20,6 +20,7 @@ main {
     max-width: 80rem;
     margin: 0 auto;
     padding-inline: 2rem;
+    padding-bottom: 2rem;
 }
 
 ul {
