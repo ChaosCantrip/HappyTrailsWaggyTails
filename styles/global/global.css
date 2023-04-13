@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    font-weight: bolder;
+}
