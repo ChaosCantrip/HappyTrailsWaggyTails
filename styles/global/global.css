@@ -16,11 +16,10 @@ body {
     flex-direction: column;
 }
 
-main {
+main > * {
     max-width: 80rem;
     margin: 0 auto;
-    padding-inline: 2rem;
-    padding-bottom: 2rem;
+    padding: 1.8rem;
 }
 
 ul {
