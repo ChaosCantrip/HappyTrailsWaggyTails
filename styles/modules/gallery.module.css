@@ -13,3 +13,8 @@
     width: var(--image-size);
     height: var(--image-size);
 }
+
+.faded {
+    opacity: 0;
+    transition: opacity 0.5s;
+}

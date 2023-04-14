@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/styles/modules/gallery.module.css";
 
 import Photo1 from "@/public/images/monty/1.jpg";
@@ -11,19 +13,31 @@ import Photo8 from "@/public/images/monty/8.jpg";
 import Photo9 from "@/public/images/monty/9.jpg";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function MontyGallery() {
+    useEffect(() => {
+
+        function changeImage() {
+            const randomImage = Math.floor(Math.random() * 9) + 1;
+            const imageId = "img" + randomImage;
+            document.getElementById(imageId).classList.add(styles.faded);
+        }
+
+        const interval = setInterval(changeImage, 1000);
+        return () => clearInterval(interval);
+    }, []);
     return (
         <div className={styles.gallery}>
-            <Image src={Photo1} alt={"1"}/>
-            <Image src={Photo2} alt={"2"}/>
-            <Image src={Photo3} alt={"3"}/>
-            <Image src={Photo4} alt={"4"}/>
-            <Image src={Photo5} alt={"5"}/>
-            <Image src={Photo6} alt={"6"}/>
-            <Image src={Photo7} alt={"7"}/>
-            <Image src={Photo8} alt={"8"}/>
-            <Image src={Photo9} alt={"9"}/>
+            <Image id="img1" src={Photo1} alt={"1"}/>
+            <Image id="img2" src={Photo2} alt={"2"}/>
+            <Image id="img3" src={Photo3} alt={"3"}/>
+            <Image id="img4" src={Photo4} alt={"4"}/>
+            <Image id="img5" src={Photo5} alt={"5"}/>
+            <Image id="img6" src={Photo6} alt={"6"}/>
+            <Image id="img7" src={Photo7} alt={"7"}/>
+            <Image id="img8" src={Photo8} alt={"8"}/>
+            <Image id="img9" src={Photo9} alt={"9"}/>
         </div>
     )
 }
