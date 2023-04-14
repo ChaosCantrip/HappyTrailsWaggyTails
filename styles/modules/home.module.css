@@ -3,23 +3,6 @@
     font-size: 1.25rem;
 }
 
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flexbox > div {
-    padding: 4rem;
-    text-align: center;
-    vertical-align: center;
-    justify-content: center;
-    flex: 1;
-    flex-basis: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .logo {
     width: 100%;
     height: 100%;

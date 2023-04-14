@@ -7,11 +7,12 @@ export const metadata = {
 }
 
 import styles from "@/styles/modules/home.module.css";
+import layout from "@/styles/modules/layout.module.css";
 import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className={styles.flexbox}>
+    <div className={layout.flexbox}>
         <div>
             <div className={styles.intro}>
                 <h1>Hi, I'm Nadine!</h1>
