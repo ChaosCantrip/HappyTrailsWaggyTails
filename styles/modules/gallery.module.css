@@ -4,9 +4,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
+    transition: opacity 2s ease-in-out;
 }
 
 .gallery > * {
+    background: lightgray;
     grid-column: span 1;
     grid-row: span 1;
     object-fit: cover;
@@ -14,7 +16,31 @@
     height: var(--image-size);
 }
 
-.faded {
+.hidden {
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.x0 {
+    grid-column: 1 / 2;
+}
+
+.x1 {
+    grid-column: 2 / 3;
+}
+
+.x2 {
+    grid-column: 3 / 4;
+}
+
+.y0 {
+    grid-row: 1 / 2;
+}
+
+.y1 {
+    grid-row: 2 / 3;
+}
+
+.y2 {
+    grid-row: 3 / 4;
 }
