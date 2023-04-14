@@ -13,19 +13,24 @@ import Photo8 from "@/public/images/monty/8.jpg";
 import Photo9 from "@/public/images/monty/9.jpg";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-const shownImages = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9"];
-const hiddenImages = ["img10", "img11"];
+import { useEffect } from "react";
 
 export default function MontyGallery() {
     useEffect(() => {
 
         function changeImage() {
-            const imageIdToShow = hiddenImages[Math.floor(Math.random() * hiddenImages.length)];
-            const imageIdToHide = shownImages[Math.floor(Math.random() * shownImages.length)];
-            const imageToShow = document.getElementById(imageIdToShow);
-            const imageToHide = document.getElementById(imageIdToHide);
+            const hiddenImages = [];
+            const shownImages = [];
+            const gallery = document.getElementById("gallery");
+            for (const child of gallery.children) {
+                if (child.classList.contains(styles.hidden)) {
+                    hiddenImages.push(child);
+                } else {
+                    shownImages.push(child);
+                }
+            }
+            const imageToShow = hiddenImages[Math.floor(Math.random() * hiddenImages.length)];
+            const imageToHide = shownImages[Math.floor(Math.random() * shownImages.length)];
             const to_remove = [];
             imageToShow.classList.forEach((className) => {
                 if (className !== styles.hidden) {
@@ -42,17 +47,13 @@ export default function MontyGallery() {
             });
             imageToShow.classList.remove(styles.hidden);
             imageToHide.classList.add(styles.hidden);
-            shownImages.push(imageIdToShow);
-            hiddenImages.push(imageIdToHide);
-            shownImages.splice(shownImages.indexOf(imageIdToHide), 1);
-            hiddenImages.splice(hiddenImages.indexOf(imageIdToShow), 1);
         }
 
         const interval = setInterval(changeImage, 3000);
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className={styles.gallery}>
+        <div id="gallery" className={styles.gallery}>
             <Image id="img1" src={Photo1} alt={"1"} className={`${styles.x0} ${styles.y0}`}/>
             <Image id="img2" src={Photo2} alt={"2"} className={`${styles.x1} ${styles.y0}`}/>
             <Image id="img3" src={Photo3} alt={"3"} className={`${styles.x2} ${styles.y0}`}/>
