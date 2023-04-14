@@ -14,7 +14,8 @@ export default function HomePage() {
     <div className={styles.flexbox}>
         <div>
             <div className={styles.intro}>
-                <h2>Hi, I'm Nadine!</h2>
+                <h1>Hi, I'm Nadine!</h1>
+                <br/>
                 <p>After working for most of my adult life, specifically the last 9 years, in a school for children with Special Education Needs, I am now following a long held ambition to work with dogs, and have set up Happy Trails Waggy Tails dog walking service</p>
                 <p>I would love to hear from you and meet your doggy member of the family</p>
             </div>
@@ -29,11 +30,15 @@ export default function HomePage() {
         </div>
         <div>
             <ul className={styles.list}>
-                <li><PawIcon/> Solo or group walks</li>
-                <li><PawIcon/> 1 hour or shorter walks, tailored to your needs</li>
-                <li><PawIcon/> Friendly, professional, personal service</li>
-                <li><PawIcon/> Canine First Aid Certified</li>
-                <li><PawIcon/> Fully insured and DBS Checked</li>
+                <li>Solo or group walks</li>
+                <li><PawIcon/></li>
+                <li>1 hour or shorter walks, tailored to your needs</li>
+                <li><PawIcon/></li>
+                <li>Friendly, professional, personal service</li>
+                <li><PawIcon/></li>
+                <li>Canine First Aid Certified</li>
+                <li><PawIcon/></li>
+                <li>Fully insured and DBS Checked</li>
             </ul>
         </div>
     </div>
@@ -42,6 +47,6 @@ export default function HomePage() {
 
 function PawIcon(){
     return (
-        <FontAwesomeIcon icon={faPaw}/>
+        <FontAwesomeIcon icon={faPaw} className={styles.paw}/>
     )
 }
