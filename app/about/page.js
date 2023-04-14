@@ -1,4 +1,5 @@
 import layout from "@/styles/modules/layout.module.css";
+import MontyGallery from "@/app/about/MontyGallery";
 
 export const metadata = {
         title: "About"
@@ -33,6 +34,9 @@ export default function AboutPage() {
                     <p>Footer</p>
                     <p>Down</p>
                 </section>
+            </div>
+            <div>
+                <MontyGallery/>
             </div>
         </div>
     )
