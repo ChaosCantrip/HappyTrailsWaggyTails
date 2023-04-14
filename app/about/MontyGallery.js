@@ -25,9 +25,25 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function MontyGallery() {
+    let image_is_selected = false;
+
+    function handleClick(imageId) {
+        const image = document.getElementById(imageId);
+        if (image_is_selected) {
+            image.classList.remove(styles.full);
+            image_is_selected = false;
+        } else {
+            image.classList.add(styles.full);
+            image_is_selected = true;
+        }
+    }
+
     useEffect(() => {
 
         function changeImage() {
+            if (image_is_selected) {
+                return;
+            }
             const hiddenImages = [];
             const shownImages = [];
             const gallery = document.getElementById("gallery");
@@ -63,24 +79,24 @@ export default function MontyGallery() {
     }, []);
     return (
         <div id="gallery" className={styles.gallery}>
-            <Image id="img1" src={Photo1} alt={"1"} className={`${styles.x0} ${styles.y0}`}/>
-            <Image id="img2" src={Photo2} alt={"2"} className={`${styles.x1} ${styles.y0}`}/>
-            <Image id="img3" src={Photo3} alt={"3"} className={`${styles.x2} ${styles.y0}`}/>
-            <Image id="img4" src={Photo4} alt={"4"} className={`${styles.x0} ${styles.y1}`}/>
-            <Image id="img5" src={Photo5} alt={"5"} className={`${styles.x1} ${styles.y1}`}/>
-            <Image id="img6" src={Photo6} alt={"6"} className={`${styles.x2} ${styles.y1}`}/>
-            <Image id="img7" src={Photo7} alt={"7"} className={`${styles.x0} ${styles.y2}`}/>
-            <Image id="img8" src={Photo8} alt={"8"} className={`${styles.x1} ${styles.y2}`}/>
-            <Image id="img9" src={Photo9} alt={"9"} className={`${styles.x2} ${styles.y2}`}/>
-            <Image id="img10" src={Photo10} alt={"10"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img11" src={Photo11} alt={"11"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img12" src={Photo12} alt={"12"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img13" src={Photo13} alt={"13"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img14" src={Photo14} alt={"14"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img15" src={Photo15} alt={"15"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img16" src={Photo16} alt={"16"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img17" src={Photo17} alt={"17"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-            <Image id="img18" src={Photo18} alt={"18"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img1" onClick={() => handleClick("img1")} src={Photo1} alt={"1"} className={`${styles.x0} ${styles.y0}`}/>
+            <Image id="img2" onClick={() => handleClick("img2")} src={Photo2} alt={"2"} className={`${styles.x1} ${styles.y0}`}/>
+            <Image id="img3" onClick={() => handleClick("img3")} src={Photo3} alt={"3"} className={`${styles.x2} ${styles.y0}`}/>
+            <Image id="img4" onClick={() => handleClick("img4")} src={Photo4} alt={"4"} className={`${styles.x0} ${styles.y1}`}/>
+            <Image id="img5" onClick={() => handleClick("img5")} src={Photo5} alt={"5"} className={`${styles.x1} ${styles.y1}`}/>
+            <Image id="img6" onClick={() => handleClick("img6")} src={Photo6} alt={"6"} className={`${styles.x2} ${styles.y1}`}/>
+            <Image id="img7" onClick={() => handleClick("img7")} src={Photo7} alt={"7"} className={`${styles.x0} ${styles.y2}`}/>
+            <Image id="img8" onClick={() => handleClick("img8")} src={Photo8} alt={"8"} className={`${styles.x1} ${styles.y2}`}/>
+            <Image id="img9" onClick={() => handleClick("img9")} src={Photo9} alt={"9"} className={`${styles.x2} ${styles.y2}`}/>
+            <Image id="img10" onClick={() => handleClick("img10")} src={Photo10} alt={"10"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img11" onClick={() => handleClick("img11")} src={Photo11} alt={"11"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img12" onClick={() => handleClick("img12")} src={Photo12} alt={"12"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img13" onClick={() => handleClick("img13")} src={Photo13} alt={"13"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img14" onClick={() => handleClick("img14")} src={Photo14} alt={"14"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img15" onClick={() => handleClick("img15")} src={Photo15} alt={"15"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img16" onClick={() => handleClick("img16")} src={Photo16} alt={"16"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img17" onClick={() => handleClick("img17")} src={Photo17} alt={"17"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+            <Image id="img18" onClick={() => handleClick("img18")} src={Photo18} alt={"18"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
         </div>
     )
 }

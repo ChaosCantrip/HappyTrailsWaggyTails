@@ -1,9 +1,10 @@
 .gallery {
     --image-size: 10rem;
+    --gap-size: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: var(--gap-size);
     transition: opacity 2s ease-in-out;
 }
 
@@ -16,18 +17,17 @@
     height: var(--image-size);
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: opacity 0.5s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .gallery > *:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transition: all 0.1s ease-in-out;
 }
 
 .hidden {
-    z-index: -3;
+    z-index: -1;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .x0 {
@@ -52,4 +52,12 @@
 
 .y2 {
     grid-row: 3 / 4;
+}
+
+.full {
+    z-index: 1;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: calc(var(--image-size) * 3 + var(--gap-size) * 2);
+    height: calc(var(--image-size) * 3 + var(--gap-size) * 2);
 }
