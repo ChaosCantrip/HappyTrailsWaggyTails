@@ -1,14 +1,19 @@
 import Link from "next/link";
+import logo from "@/public/images/logo.jpg";
 
 import styles from "@/styles/modules/header.module.css";
+import Image from "next/image";
 
 export default function Header(){
     return (
         <header className={styles.wrapper}>
             <div className={styles.content}>
                 <div className={styles.title}>
-                    <h1>Happy Trails Waggy Tails</h1>
-                    <p>Website currently under development :)</p>
+                    <Image src={logo} alt={"Logo"} className={styles.logo}/>
+                    <div>
+                        <h1>Happy Trails Waggy Tails</h1>
+                        <p>Website currently under development :)</p>
+                    </div>
                 </div>
                 <nav className={styles.nav}>
                     <ul>

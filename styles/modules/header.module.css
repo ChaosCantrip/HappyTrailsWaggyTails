@@ -8,11 +8,12 @@
     display: flex;
     max-width: 85rem;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .nav {
-    margin-left: auto;
     margin-block: auto;
+    margin-inline: auto;
 }
 
 .nav ul {
@@ -35,4 +36,23 @@
 
 .nav ul a:hover {
     background: #f0f0f0;
+}
+
+.title {
+    display: flex;
+    gap: 2rem;
+    margin-right: auto;
+    margin-inline: auto;
+}
+
+.title > * {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 6rem;
+    height: 7rem;
 }
