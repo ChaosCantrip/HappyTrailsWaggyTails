@@ -16,12 +16,6 @@ body {
     flex-direction: column;
 }
 
-main > * {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 1.8rem;
-}
-
 section {
     padding: 1rem 0;
 }

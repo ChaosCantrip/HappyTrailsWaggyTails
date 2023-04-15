@@ -1,16 +1,30 @@
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 85rem;
+    margin: 0 auto;
 }
 
-.flexbox > div {
-    padding: 4rem;
-    text-align: center;
-    vertical-align: center;
-    justify-content: center;
-    flex: 1;
-    flex-basis: 30rem;
+@media only screen and (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .desktop_only {
+        display: none;
+    }
+}
+
+.page > * {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 1.8rem;
+}
+
+.double {
+    grid-column: span 2;
 }
