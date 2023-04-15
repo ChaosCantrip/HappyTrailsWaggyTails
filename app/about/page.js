@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function AboutPage() {
     return (
-        <div className={layout.flexbox}>
+        <div className={layout.page}>
             <div>
                 <h1>About Me</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aspernatur atque blanditiis

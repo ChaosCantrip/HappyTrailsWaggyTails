@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className={layout.flexbox}>
+    <div className={layout.page}>
         <div>
             <div className={styles.intro}>
                 <h1>Hi, I'm Nadine!</h1>
@@ -21,7 +21,7 @@ export default function HomePage() {
                 <p>I would love to hear from you and meet your doggy member of the family</p>
             </div>
         </div>
-        <div className={styles.logo_wrapper}>
+        <div className={`${layout.desktop_only}`}>
             <Image src={logo} alt="Logo" className={styles.logo}/>
         </div>
         <div id="contact">
