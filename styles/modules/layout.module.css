@@ -12,7 +12,7 @@
     }
 
     .desktop_only {
-        display: none;
+        display: none !important;
     }
 }
 
