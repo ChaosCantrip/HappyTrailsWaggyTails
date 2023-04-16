@@ -45,8 +45,13 @@
     color: black;
 }
 
-.nav ul a:hover {
-    background: #f0f0f0;
+.nav ul a:not(.active):hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: lightgray;
+    margin-top: 0.5rem;
 }
 
 .title {
@@ -66,4 +71,14 @@
 .logo {
     width: 9rem;
     height: 6rem;
+}
+
+.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: lightgray;
+    margin-top: 0.5rem;
+    border-radius: 0.1rem;
 }
