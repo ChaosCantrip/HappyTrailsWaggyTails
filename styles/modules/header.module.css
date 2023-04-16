@@ -28,30 +28,21 @@
 }
 
 .nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .nav ul a {
-    padding-block: 1rem;
+    flex: 1;
+    padding-block: 0.5rem;
     padding-inline: 1.5rem;
     line-height: 1.2rem;
     text-decoration: none;
     border-radius: 1rem;
     color: black;
-}
-
-.nav ul a:not(.active):hover::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.2rem;
-    background: lightgray;
-    margin-top: 0.5rem;
 }
 
 .title {
@@ -81,4 +72,27 @@
     background: lightgray;
     margin-top: 0.5rem;
     border-radius: 0.1rem;
+}
+
+.underline {
+    width: 20%;
+    height: 0.25rem;
+    background-color: lightgray;
+    transition: 0.3s ease-in-out;
+}
+
+.ul_one {
+    margin-left: 2.5%;
+}
+
+.ul_two {
+    margin-left: 27.5%;
+}
+
+.ul_three {
+    margin-left: 52.5%;
+}
+
+.ul_four {
+    margin-left: 77.5%;
 }
