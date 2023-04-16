@@ -9,14 +9,16 @@ import { usePathname } from "next/navigation";
 import {pathHasPrefix} from "next/dist/shared/lib/router/utils/path-has-prefix";
 
 export default function Header(){
-    function get_class(path) {
-        console.log(pathname);
-        console.log(path);
-        console.log(pathname === path);
-        if (pathname === path) {
-            return styles.active;
+    function get_ul_class() {
+        if (pathname === "/home") {
+            return styles.ul_one;
+        } else if (pathname === "/about") {
+            return styles.ul_two;
+        } else if (pathname === "/services") {
+            return styles.ul_three;
+        } else {
+            return styles.ul_four;
         }
-        return styles.inactive;
     }
     const pathname = usePathname();
     return (
@@ -31,11 +33,12 @@ export default function Header(){
                 </div>
                 <nav className={styles.nav}>
                     <ul>
-                        <Link href="home" className={get_class("/home")}><li>Home</li></Link>
-                        <Link href="about" className={get_class("/about")}><li>About</li></Link>
-                        <Link href="services" className={get_class("/services")}><li>Services</li></Link>
-                        <Link href="contact" className={get_class("/contact")}><li>Contact</li></Link>
+                        <Link href="home"><li>Home</li></Link>
+                        <Link href="about"><li>About</li></Link>
+                        <Link href="services"><li>Services</li></Link>
+                        <Link href="contact"><li>Contact</li></Link>
                     </ul>
+                    <div className={`${styles.underline} ${get_ul_class()}`}></div>
                 </nav>
             </div>
         </header>
