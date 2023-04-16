@@ -6,7 +6,8 @@ import logo from "@/public/images/logo_no_text.png";
 import styles from "@/styles/modules/header.module.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import {pathHasPrefix} from "next/dist/shared/lib/router/utils/path-has-prefix";
+import {faPaw} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Header(){
     function get_ul_class() {
@@ -38,7 +39,9 @@ export default function Header(){
                         <Link href="services"><li>Services</li></Link>
                         <Link href="contact"><li>Contact</li></Link>
                     </ul>
-                    <div className={`${styles.underline} ${get_ul_class()}`}></div>
+                    <div className={`${styles.underline} ${get_ul_class()}`}>
+                        <FontAwesomeIcon icon={faPaw} className={styles.paw}/>
+                    </div>
                 </nav>
             </div>
         </header>

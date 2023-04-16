@@ -75,10 +75,19 @@
 }
 
 .underline {
+    position: relative;
     width: 20%;
     height: 0.25rem;
     background-color: lightgray;
     transition: 0.3s ease-in-out;
+}
+
+.underline > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rosybrown;
 }
 
 .ul_one {
