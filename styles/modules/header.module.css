@@ -1,14 +1,25 @@
 .wrapper {
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background: white;
 }
 
 .content {
     padding: 1rem 1rem 2rem;
     text-align: center;
-    display: flex;
-    max-width: 85rem;
     margin: 0 auto;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        padding-top: 2rem;
+    }
 }
 
 .nav {
