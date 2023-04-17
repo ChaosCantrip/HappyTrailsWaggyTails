@@ -17,7 +17,11 @@ export default function HomePage() {
             <div className={styles.intro}>
                 <h1>Hi, I'm Nadine!</h1>
                 <br/>
-                <p>After working for most of my adult life, specifically the last 9 years, in a school for children with Special Education Needs, I am now following a long held ambition to work with dogs, and have set up Happy Trails Waggy Tails dog walking service</p>
+                <p>For the last 9 years, I have been working with children who have Special Educational Needs,
+                    which has been very rewarding.</p>
+                <p>However, after saying goodbye to our beloved Monty, and him leaving a huge hole in our hearts and
+                    home, I feel now is the time to follow a long held dream of mine and work with
+                    dogs, so I have started Happy Trails Waggy Tails dog walking service.</p>
                 <p>I would love to hear from you and meet your doggy member of the family</p>
             </div>
         </div>
