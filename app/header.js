@@ -33,11 +33,11 @@ export default function Header(){
                     </div>
                 </div>
                 <nav className={styles.nav}>
-                    <ul>
-                        <Link href="home"><li>Home</li></Link>
-                        <Link href="about"><li>About</li></Link>
-                        <Link href="services"><li>Services</li></Link>
-                        <Link href="contact"><li>Contact</li></Link>
+                    <ul className={styles.nav_menu}>
+                        <Link href="home" className={styles.nav_button}><li>Home</li></Link>
+                        <Link href="about" className={styles.nav_button}><li>About</li></Link>
+                        <Link href="services" className={styles.nav_button}><li>Services</li></Link>
+                        <Link href="contact" className={styles.nav_button}><li>Contact</li></Link>
                     </ul>
                     <div className={`${styles.underline} ${get_ul_class()}`}>
                         <FontAwesomeIcon icon={faPaw} className={styles.paw}/>
