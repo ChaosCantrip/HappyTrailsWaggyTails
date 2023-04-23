@@ -17,7 +17,7 @@ export async function POST(request) {
             from: process.env.SMTP_MAIL,
             to: process.env.SMTP_MAIL,
             subject: 'Contact Form',
-            text: `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
+            text: `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nMessage: ${data.message}`
         };
         await transporter.sendMail(mailOptions);
         return NextResponse.json("Success", { status: 200 })
