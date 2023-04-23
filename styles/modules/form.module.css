@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid #000;
+    background: #e7e7e7;
+}
+
+.input:hover {
+    border: 1px solid #000;
+}
+
+.submit {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    background-color: #ccc;
+    font-weight: bolder;
+}
+
+.submit:hover {
+    background-color: rosybrown;
+    color: #fff;
+}
+
+.icon {
+    font-size: xxx-large;
+}
