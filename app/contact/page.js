@@ -2,6 +2,7 @@ import layout from "@/styles/modules/layout.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "@/app/contact/ContactForm";
+import FacebookEmbed from "@/app/contact/FacebookEmbed";
 
 export const metadata = {
     title: "Contact"
@@ -19,8 +20,8 @@ export default function ContactPage() {
                 <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytails.co.uk</a></p>
             </div>
             <div className={layout.right}>
-                <h1>I'm on Facebook!</h1>
-                <p>Embed here innit</p>
+                <h2>I'm on Facebook!</h2>
+                <FacebookEmbed/>
             </div>
             <div className={layout.left}>
                 <p>Alternatively, use the form below and I'll reply to you as soon as possible!</p>
