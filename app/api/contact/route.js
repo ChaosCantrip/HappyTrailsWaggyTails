@@ -11,7 +11,7 @@ export async function POST(request) {
             subject: 'Contact Form',
             text: `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nMessage: ${data.message}`,
             html: await format_email("ContactForm", data)
-        });
+        }, "Contact Form");
         await send_email({
             to: data.email,
             subject: "Happy Trails Waggy Tails",
