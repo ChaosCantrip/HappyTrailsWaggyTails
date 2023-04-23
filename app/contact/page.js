@@ -1,6 +1,7 @@
 import layout from "@/styles/modules/layout.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "@/app/contact/ContactForm";
 
 export const metadata = {
     title: "Contact"
@@ -20,6 +21,10 @@ export default function ContactPage() {
             <div className={layout.right}>
                 <h1>I'm on Facebook!</h1>
                 <p>Embed here innit</p>
+            </div>
+            <div className={layout.left}>
+                <p>Alternatively, use the form below and I'll reply to you as soon as possible!</p>
+                <ContactForm/>
             </div>
         </div>
     )
