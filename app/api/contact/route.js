@@ -1,7 +1,5 @@
 import { send_email, format_email } from '@/lib/email';
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
 
 export async function POST(request) {
     try {
