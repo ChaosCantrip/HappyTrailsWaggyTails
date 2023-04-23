@@ -1,11 +1,28 @@
+import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
-    console.log("Hit on /api/contact");
-    const data = await request.json();
-    console.log(data);
-    if (data["message"].toLowerCase() === "error") {
+    try {
+        const data = await request.json();
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST,
+            port: process.env.SMTP_PORT,
+            secure: true,
+            auth: {
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS
+            }
+        });
+        const mailOptions = {
+            from: process.env.SMTP_MAIL,
+            to: process.env.SMTP_MAIL,
+            subject: 'Contact Form',
+            text: `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
+        };
+        await transporter.sendMail(mailOptions);
+        return NextResponse.json("Success", { status: 200 })
+    } catch (e) {
+        console.log(e);
         return NextResponse.json("Error", { status: 500 })
     }
-    return NextResponse.json('Thanks for contacting us, we will get back to you soon!');
 }
