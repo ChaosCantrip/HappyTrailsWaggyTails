@@ -29,7 +29,6 @@ export default function Header(){
                     <Image src={logo} alt={"Logo"} className={styles.logo}/>
                     <div>
                         <h1>Happy Trails Waggy Tails</h1>
-                        <p>Website currently under development :)</p>
                     </div>
                 </div>
                 <nav className={styles.nav}>
