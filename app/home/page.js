@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaw, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPaw } from "@fortawesome/free-solid-svg-icons";
 import logo from "@/public/images/logo.jpg";
 
 export const metadata = {
