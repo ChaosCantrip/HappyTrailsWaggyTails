@@ -16,7 +16,7 @@ export default function HomePage() {
                 <h1>Hi, I'm Nadine!</h1>
                 <br/>
                 <p>Welcome to Happy Tails Waggy Tails Dog Walking Service.</p>
-                <p>Areas covered are Barnby Dun, Kirk Sandall, Edenthorpe, Hatfield, Dunsville and Dunscroft. Other areas will be considered.</p>
+                <p>Areas covered are Barnby Dun, Kirk Sandall, Edenthorpe, Hatfield, Dunsville and Dunscroft. Other areas near Doncaster will be considered.</p>
                 <p>I look forward to meeting you and your doggy member of the family!</p>
             </div>
         </div>
