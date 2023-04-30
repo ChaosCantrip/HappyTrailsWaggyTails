@@ -80,24 +80,24 @@ export default function MontyGallery() {
     return (
         <div className={styles.wrapper}>
             <div id="gallery" className={styles.gallery}>
-                <Image id="img1" onClick={() => handleClick("img1")} src={Photo1} blurDataURL={"@/public/images/monty/blurred/monty1.jpg"} placeholder="blur" alt={"1"} className={`${styles.x0} ${styles.y0}`}/>
-                <Image id="img2" onClick={() => handleClick("img2")} src={Photo2} blurDataURL={"@/public/images/monty/blurred/monty2.jpg"} placeholder="blur" alt={"2"} className={`${styles.x1} ${styles.y0}`}/>
-                <Image id="img3" onClick={() => handleClick("img3")} src={Photo3} blurDataURL={"@/public/images/monty/blurred/monty3.jpg"} placeholder="blur" alt={"3"} className={`${styles.x2} ${styles.y0}`}/>
-                <Image id="img4" onClick={() => handleClick("img4")} src={Photo4} blurDataURL={"@/public/images/monty/blurred/monty4.jpg"} placeholder="blur" alt={"4"} className={`${styles.x0} ${styles.y1}`}/>
-                <Image id="img5" onClick={() => handleClick("img5")} src={Photo5} blurDataURL={"@/public/images/monty/blurred/monty5.jpg"} placeholder="blur" alt={"5"} className={`${styles.x1} ${styles.y1}`}/>
-                <Image id="img6" onClick={() => handleClick("img6")} src={Photo6} blurDataURL={"@/public/images/monty/blurred/monty6.jpg"} placeholder="blur" alt={"6"} className={`${styles.x2} ${styles.y1}`}/>
-                <Image id="img7" onClick={() => handleClick("img7")} src={Photo7} blurDataURL={"@/public/images/monty/blurred/monty7.jpg"} placeholder="blur" alt={"7"} className={`${styles.x0} ${styles.y2}`}/>
-                <Image id="img8" onClick={() => handleClick("img8")} src={Photo8} blurDataURL={"@/public/images/monty/blurred/monty8.jpg"} placeholder="blur" alt={"8"} className={`${styles.x1} ${styles.y2}`}/>
-                <Image id="img9" onClick={() => handleClick("img9")} src={Photo9} blurDataURL={"@/public/images/monty/blurred/monty9.jpg"} placeholder="blur" alt={"9"} className={`${styles.x2} ${styles.y2}`}/>
-                <Image id="img10" onClick={() => handleClick("img10")} src={Photo10} blurDataURL={"@/public/images/monty/blurred/monty10.jpg"} placeholder="blur" alt={"10"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img11" onClick={() => handleClick("img11")} src={Photo11} blurDataURL={"@/public/images/monty/blurred/monty11.jpg"} placeholder="blur" alt={"11"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img12" onClick={() => handleClick("img12")} src={Photo12} blurDataURL={"@/public/images/monty/blurred/monty12.jpg"} placeholder="blur" alt={"12"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img13" onClick={() => handleClick("img13")} src={Photo13} blurDataURL={"@/public/images/monty/blurred/monty13.jpg"} placeholder="blur" alt={"13"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img14" onClick={() => handleClick("img14")} src={Photo14} blurDataURL={"@/public/images/monty/blurred/monty14.jpg"} placeholder="blur" alt={"14"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img15" onClick={() => handleClick("img15")} src={Photo15} blurDataURL={"@/public/images/monty/blurred/monty15.jpg"} placeholder="blur" alt={"15"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img16" onClick={() => handleClick("img16")} src={Photo16} blurDataURL={"@/public/images/monty/blurred/monty16.jpg"} placeholder="blur" alt={"16"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img17" onClick={() => handleClick("img17")} src={Photo17} blurDataURL={"@/public/images/monty/blurred/monty17.jpg"} placeholder="blur" alt={"17"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
-                <Image id="img18" onClick={() => handleClick("img18")} src={Photo18} blurDataURL={"@/public/images/monty/blurred/monty18.jpg"} placeholder="blur" alt={"18"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img1" onClick={() => handleClick("img1")} src={Photo1} placeholder="blur" alt={"1"} className={`${styles.x0} ${styles.y0}`}/>
+                <Image id="img2" onClick={() => handleClick("img2")} src={Photo2} placeholder="blur" alt={"2"} className={`${styles.x1} ${styles.y0}`}/>
+                <Image id="img3" onClick={() => handleClick("img3")} src={Photo3} placeholder="blur" alt={"3"} className={`${styles.x2} ${styles.y0}`}/>
+                <Image id="img4" onClick={() => handleClick("img4")} src={Photo4} placeholder="blur" alt={"4"} className={`${styles.x0} ${styles.y1}`}/>
+                <Image id="img5" onClick={() => handleClick("img5")} src={Photo5} placeholder="blur" alt={"5"} className={`${styles.x1} ${styles.y1}`}/>
+                <Image id="img6" onClick={() => handleClick("img6")} src={Photo6} placeholder="blur" alt={"6"} className={`${styles.x2} ${styles.y1}`}/>
+                <Image id="img7" onClick={() => handleClick("img7")} src={Photo7} placeholder="blur" alt={"7"} className={`${styles.x0} ${styles.y2}`}/>
+                <Image id="img8" onClick={() => handleClick("img8")} src={Photo8} placeholder="blur" alt={"8"} className={`${styles.x1} ${styles.y2}`}/>
+                <Image id="img9" onClick={() => handleClick("img9")} src={Photo9} placeholder="blur" alt={"9"} className={`${styles.x2} ${styles.y2}`}/>
+                <Image id="img10" onClick={() => handleClick("img10")} src={Photo10} placeholder="blur" alt={"10"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img11" onClick={() => handleClick("img11")} src={Photo11} placeholder="blur" alt={"11"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img12" onClick={() => handleClick("img12")} src={Photo12} placeholder="blur" alt={"12"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img13" onClick={() => handleClick("img13")} src={Photo13} placeholder="blur" alt={"13"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img14" onClick={() => handleClick("img14")} src={Photo14} placeholder="blur" alt={"14"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img15" onClick={() => handleClick("img15")} src={Photo15} placeholder="blur" alt={"15"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img16" onClick={() => handleClick("img16")} src={Photo16} placeholder="blur" alt={"16"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img17" onClick={() => handleClick("img17")} src={Photo17} placeholder="blur" alt={"17"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
+                <Image id="img18" onClick={() => handleClick("img18")} src={Photo18} placeholder="blur" alt={"18"} className={`${styles.x0} ${styles.y0} ${styles.hidden}`}/>
             </div>
         </div>
     )
