@@ -16,7 +16,7 @@ export default function AboutPage() {
                 <p>However, after saying goodbye to our beloved Monty, and him leaving a huge hole in our hearts and
                     home, I feel now is the time to follow a long held dream of mine and work with
                     dogs, so I have started Happy Trails Waggy Tails dog walking service.</p>
-                <p>I would love to hear from you and meet your doggy member of the family</p>
+                <p>Fully Insured & DBS Checked, Canine First Aid Certified</p>
             </div>
             <div>
                 <MontyGallery/>
