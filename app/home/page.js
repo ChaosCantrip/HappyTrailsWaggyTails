@@ -28,24 +28,6 @@ export default function HomePage() {
         <div className={`${layout.desktop_only}`}>
             <Image src={logo} alt="Logo" className={styles.logo}/>
         </div>
-        <div id="contact">
-            <h2>Contact Me!</h2>
-            <p><FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:07425 160615">07425 160615</a></p>
-            <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytails.co.uk</a></p>
-        </div>
-        <div>
-            <ul className={styles.list}>
-                <li>Solo or group walks</li>
-                <li><PawIcon/></li>
-                <li>1 hour or shorter walks, tailored to your needs</li>
-                <li><PawIcon/></li>
-                <li>Friendly, professional, personal service</li>
-                <li><PawIcon/></li>
-                <li>Canine First Aid Certified</li>
-                <li><PawIcon/></li>
-                <li>Fully insured and DBS Checked</li>
-            </ul>
-        </div>
     </div>
   );
 }
