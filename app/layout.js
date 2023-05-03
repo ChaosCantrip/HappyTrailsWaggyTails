@@ -5,6 +5,7 @@ config.autoAddCss = false
 import "@/styles/global/master.css";
 import Header from "@/app/header";
 import Footer from "@/app/footer";
+import {Analytics} from "@vercel/analytics/react";
 
 export const metadata = {
     title: {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
                 {children}
             </main>
             <Footer />
+            <Analytics />
         </body>
     </html>
   )
