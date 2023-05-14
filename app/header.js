@@ -11,7 +11,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Header(){
     function get_ul_class() {
-        if (pathname === "/home") {
+        if (pathname === "/" || pathname === "/home") {
             return styles.ul_one;
         } else if (pathname === "/about") {
             return styles.ul_two;
@@ -33,7 +33,7 @@ export default function Header(){
                 </div>
                 <nav className={styles.nav}>
                     <ul className={styles.nav_menu}>
-                        <Link href="home" className={styles.nav_button}><li>Home</li></Link>
+                        <Link href="/" className={styles.nav_button}><li>Home</li></Link>
                         <Link href="about" className={styles.nav_button}><li>About</li></Link>
                         <Link href="services" className={styles.nav_button}><li>Services</li></Link>
                         <Link href="contact" className={styles.nav_button}><li>Contact</li></Link>
