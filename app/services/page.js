@@ -10,10 +10,50 @@ export const metadata = {
 export default function ServicesPage() {
     return (
         <div className={layout.page}>
-            <div className={layout.double}>
+            <div>
+                <h1>Prices</h1>
+                <br/>
+                <table className={layout.table}>
+                    <tbody>
+                        <tr>
+                            <td>30 Minutes Consultation</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td>15 Minutes Home Visit & Interaction</td>
+                            <td>£6</td>
+                        </tr>
+                        <tr>
+                            <td>30 Minutes Solo Walk</td>
+                            <td>£8</td>
+                        </tr>
+                        <tr>
+                            <td>30 Minutes Walk (Same Household)</td>
+                            <td>£6 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>30 Minutes Group Walk</td>
+                            <td>£6 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>1 Hour Solo Walk</td>
+                            <td>£14</td>
+                        </tr>
+                        <tr>
+                            <td>1 Hour Walk (Same Household)</td>
+                            <td>£12 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>1 Hour Group Walk</td>
+                            <td>£12 per dog</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
                 <h1>Services</h1>
                 <br/>
-                <ul className={styles.list}>
+                <ul className={layout.list}>
                     <li>Free consultation to determine your exact needs</li>
                     <li><PawIcon/></li>
                     <li>Solo walks for dogs who are a little nervous</li>
@@ -33,6 +73,6 @@ export default function ServicesPage() {
 
 function PawIcon(){
     return (
-        <FontAwesomeIcon icon={faPaw} className={styles.paw}/>
+        <FontAwesomeIcon icon={faPaw} className={layout.paw}/>
     )
 }
