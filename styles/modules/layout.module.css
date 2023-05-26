@@ -28,3 +28,26 @@
 .double {
     grid-column: span 2;
 }
+
+.list {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.paw {
+    color: rosybrown;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+}
+
+.table td:first-child {
+    font-weight: bold;
+}
