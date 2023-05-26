@@ -13,42 +13,14 @@ export default function ServicesPage() {
             <div>
                 <h1>Prices</h1>
                 <br/>
-                <table className={layout.table}>
-                    <tbody>
-                        <tr>
-                            <td>30 Minutes Consultation</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td>15 Minutes Home Visit & Interaction</td>
-                            <td>£6</td>
-                        </tr>
-                        <tr>
-                            <td>30 Minutes Solo Walk</td>
-                            <td>£8</td>
-                        </tr>
-                        <tr>
-                            <td>30 Minutes Walk (Same Household)</td>
-                            <td>£6 per dog</td>
-                        </tr>
-                        <tr>
-                            <td>30 Minutes Group Walk</td>
-                            <td>£6 per dog</td>
-                        </tr>
-                        <tr>
-                            <td>1 Hour Solo Walk</td>
-                            <td>£14</td>
-                        </tr>
-                        <tr>
-                            <td>1 Hour Walk (Same Household)</td>
-                            <td>£12 per dog</td>
-                        </tr>
-                        <tr>
-                            <td>1 Hour Group Walk</td>
-                            <td>£12 per dog</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>30 Minutes Consultation - Free</p>
+                <p>15 Minutes Home Visit & Interaction - £6</p>
+                <p>30 Minutes Solo Walk - £8</p>
+                <p>30 Minutes Walk (Same Household) - £6 per dog</p>
+                <p>30 Minutes Group Walk - £6 per dog</p>
+                <p>1 Hour Solo Walk - £14</p>
+                <p>1 Hour Walk (Same Household) - £12 per dog</p>
+                <p>1 Hour Group Walk - £12 per dog</p>
             </div>
             <div>
                 <h1>Services</h1>
