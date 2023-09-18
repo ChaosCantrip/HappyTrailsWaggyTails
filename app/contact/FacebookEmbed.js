@@ -13,7 +13,7 @@ export default function FacebookEmbed() {
                         className={styles.like}
                         src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2F100091950795281&width=450&layout&action&size&share=true&height=35&appId"
                         width="450" height="35" scrolling="no" frameBorder="0"
-                        allowFullScreen="true"
+                        allowFullScreen={true}
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>

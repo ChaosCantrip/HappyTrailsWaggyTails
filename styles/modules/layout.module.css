@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.double {
+    grid-column: span 2;
+}
+
 @media only screen and (max-width: 768px) {
     .page {
         grid-template-columns: 1fr;
@@ -13,6 +17,10 @@
 
     .desktop_only {
         display: none !important;
+    }
+
+    .double {
+        grid-column: span 1;
     }
 }
 
@@ -23,10 +31,6 @@
     align-items: center;
     text-align: center;
     padding: 1.8rem;
-}
-
-.double {
-    grid-column: span 2;
 }
 
 .list {
