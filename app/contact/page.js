@@ -19,7 +19,7 @@ export default function ContactPage() {
                 <p><FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:07425 160615">07425 160615</a></p>
                 <p><FontAwesomeIcon icon={faEnvelope}/> Email: <a href="mailto:nadine@happytrailswaggytails.co.uk">nadine@happytrailswaggytails.co.uk</a></p>
             </div>
-            <div className={layout.right}>
+            <div className={`${layout.right} ${layout.desktop_only}`}>
                 <h2>I'm on Facebook!</h2>
                 <FacebookEmbed/>
             </div>
