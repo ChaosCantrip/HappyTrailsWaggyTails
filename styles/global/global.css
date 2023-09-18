@@ -16,6 +16,13 @@ body {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+}
+
 section {
     padding: 1rem 0;
 }
