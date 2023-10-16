@@ -14,9 +14,9 @@ export default function ServicesPage() {
                 <br/>
                 <p>30 Minutes Consultation - Free</p>
                 <p>30 Minutes Home Visit & Interaction - £8</p>
-                <p>30 Minutes Walk - £8</p>
-                <p>45 Minutes Walk - £10</p>
-                <p>1 Hour Walk - £12</p>
+                <p>30 Minutes Solo Walk - £8 (Second Dog +£4)</p>
+                <p>30 Minutes Group Walk - £8</p>
+                <p>1 Hour Solo Walk - £12 (Second Dog +£6)</p>
             </div>
             <div>
                 <h1>Services</h1>
