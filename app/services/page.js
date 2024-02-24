@@ -17,6 +17,7 @@ export default function ServicesPage() {
                 <p>30 Minutes Solo Walk - £8 (Second Dog +£4)</p>
                 <p>30 Minutes Group Walk - £8</p>
                 <p>1 Hour Solo Walk - £12 (Second Dog +£6)</p>
+                <p>1 Hour Group Walk - £12</p>
             </div>
             <div>
                 <h1>Services</h1>
