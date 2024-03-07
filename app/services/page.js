@@ -12,20 +12,23 @@ export default function ServicesPage() {
             <div>
                 <h1>Prices</h1>
                 <br/>
-                <p>30 Minutes Consultation - Free</p>
-                <p>30 Minutes Home Visit & Interaction - £8</p>
-                <p>30 Minutes Solo Walk - £8 (Second Dog +£4)</p>
-                <p>30 Minutes Group Walk - £8</p>
-                <p>1 Hour Solo Walk - £12 (Second Dog +£6)</p>
-                <p>1 Hour Group Walk - £12</p>
+                <ul className={layout.list}>
+                    <li>30 Minutes Consultation - Free</li>
+                    <li><PawIcon/></li>
+                    <li>30 Minutes Home Visit & Interaction - £8</li>
+                    <li><PawIcon/></li>
+                    <li>45 Minute Walk - £10 (Second Dog +£5)</li>
+                    <li><PawIcon/></li>
+                    <li>1 Hour Walk - £12 (Second Dog +£6)</li>
+                </ul>
             </div>
             <div>
-                <h1>Services</h1>
+            <h1>Services</h1>
                 <br/>
                 <ul className={layout.list}>
                     <li>Free consultation to determine your exact needs</li>
                     <li><PawIcon/></li>
-                    <li>30 minute walks for dogs who need a little exercise</li>
+                    <li>45 minute walks for dogs who need a moderate walk</li>
                     <li><PawIcon/></li>
                     <li>1 hour walks for dogs to let out their energy</li>
                     <li><PawIcon/></li>
